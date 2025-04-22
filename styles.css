@@ -1,54 +1,109 @@
-:root{
-    --main-color: rgb(243, 255, 83);
-    --navbar-background: rgb(244, 244, 244);
+/* https://unsplash.com/@my_nata_lia */
+
+:root {
+	--main-color: rgb(243, 255, 83);
+	--navbar-background: rgb(244, 244, 244);
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
 }
 
-.navbar{
-    width: 100vw;
-    background-color: var(--navbar-background);
+.navbar {
+	width: 100vw;
+	background-color: var(--navbar-background);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar > * {
+	margin: 45px;
+}
+
+mark {
+	background-color: var(--main-color);
+}
+
+#navbar-left-section {
+	width: min-content;
+}
+
+#navbar-left-section > * {
+	text-wrap-mode: nowrap;
+}
+
+#navbar-left-section:hover {
+	cursor: pointer;
+}
+
+#navbar-right-section {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#navbar-right-section > span {
+	padding: 15px;
+}
+
+#navbar-right-section > span:hover {
+	cursor: pointer;
+	background-color: var(--main-color);
+}
+
+#home-page-first-section{
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
 }
 
-.navbar > *{
-    margin: 45px;
+#home-page-first-section-mobile{
+    display: none;
 }
 
-mark{
-    background-color: var(--main-color);
+#first-section-text{
+    flex: 1;
 }
 
-#navbar-left-section{
-    width: min-content;
+#home-page-first-section-image {
+    flex: 1;
+    background-image: url(./assets/images/home-page-image-1.jpg);
+    background-position: right;
+    background-size: cover;
 }
 
-#navbar-left-section > *{
-    text-wrap-mode: nowrap;
-}
+/* Mobile screens */
+@media (max-width: 730px) {
+	#navbar-right-section {
+		display: none;
+	}
 
-#navbar-left-section:hover{
-    cursor: pointer;
-}
+	.navbar > * {
+		margin: 20px;
+	}
 
-#navbar-right-section{
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    #home-page-first-section{
+        display: none;
+    }
+    #home-page-first-section-mobile{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
 
-#navbar-right-section > span{
-    padding: 15px;
-}
+	#home-page-first-section-image {
+        flex: 3;
+		background-image: url(./assets/images/home-page-image-1.jpg);
+		background-position: right;
+		background-size: cover;
+	}
+    
+    #first-section-text{
+        flex: 1;
+    }
 
-#navbar-right-section > span:hover{
-    cursor: pointer;
-    background-color: var(--main-color);
 }
