@@ -81,11 +81,15 @@ mark {
 }
 
 #first-section-text > pre{
-	font-size: 58px;
+	font-size: 3.6rem;
 }
 
 /* Mobile screens */
 @media (max-width: 730px) {
+	#first-section-text > pre{
+		font-size: 2rem;
+	}
+
 	#navbar-right-section {
 		display: none;
 	}
