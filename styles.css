@@ -67,6 +67,10 @@ mark {
 
 #first-section-text{
     flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
 }
 
 #home-page-first-section-image {
@@ -74,6 +78,10 @@ mark {
     background-image: url(./assets/images/home-page-image-1.jpg);
     background-position: right;
     background-size: cover;
+}
+
+#first-section-text > pre{
+	font-size: 58px;
 }
 
 /* Mobile screens */
