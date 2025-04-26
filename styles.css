@@ -89,6 +89,13 @@ mark {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	margin-top: 50px;
+}
+#second-section-yellow-box{
+	height: 100px; width: 500px; background-color: var(--main-color);position: absolute;z-index: -1;
+}
+#second-section-pre{
+	font-size: 2rem; font-weight: 200; line-height:2;
 }
 
 /* Mobile screens */
@@ -125,4 +132,10 @@ mark {
         flex: 1;
     }
 
+	#second-section-yellow-box{
+		width: 70%;
+	}
+	#second-section-pre{
+		font-size: 1.3rem; 
+	}
 }
