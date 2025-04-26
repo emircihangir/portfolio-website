@@ -46,13 +46,8 @@ mark {
 	align-items: center;
 }
 
-#navbar-right-section > span {
+#navbar-right-section > a {
 	padding: 15px;
-}
-
-#navbar-right-section > span:hover {
-	cursor: pointer;
-	background-color: var(--main-color);
 }
 
 #home-page-first-section{
@@ -136,6 +131,10 @@ input[type="button"]:hover{
 }
 #third-section-glass-div > div{
 	text-align: left; font-size: 3rem;
+}
+a{
+	text-decoration: none;
+	color: black;
 }
 
 
