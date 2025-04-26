@@ -84,7 +84,7 @@ mark {
 	font-size: 3.6rem;
 }
 
-#homepage-second-section{
+#homepage-second-section, #homepage-third-section{
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -96,6 +96,46 @@ mark {
 }
 #second-section-pre{
 	font-size: 2rem; font-weight: 200; line-height:2;
+}
+
+#third-section-image{
+	background-image: url(./assets/images/third-section-image.jpg);
+	background-size: cover;
+	width: 700px;
+	height: 550px;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+}
+
+#third-section-glass-div{
+	width: 700px;
+	/* background-color: rgb(244, 244, 244, 0.5); */
+	background: linear-gradient(90deg,rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 70%, rgba(243, 255, 83, 1) 100%);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	text-align: justify;
+	padding: 50px;
+}
+
+#third-section-glass-div > pre{
+	font-size: 3rem;
+}
+
+input[type="button"]{
+	background-color: white;
+	padding: 10px 15px 10px 15px;
+	border: 1px solid black;
+	color: black;
+	cursor: pointer;
+	font-size: 16px;
+	transition: 300ms;
+	font-style: italic;
+}
+input[type="button"]:hover{
+	filter: invert(100%);
 }
 
 /* Mobile screens */
@@ -138,4 +178,11 @@ mark {
 	#second-section-pre{
 		font-size: 1.3rem; 
 	}
+	#third-section-image, #third-section-glass-div{
+		width: 100%;
+		overflow: hidden;
+	}
+	/* #third-section-glass-div > pre{
+		font-size: 1rem;
+	} */
 }
