@@ -35,10 +35,6 @@ mark {
 	text-wrap-mode: nowrap;
 }
 
-#navbar-left-section:hover {
-	cursor: pointer;
-}
-
 #navbar-right-section {
 	height: 50px;
 	display: flex;
@@ -137,6 +133,37 @@ a{
 	color: black;
 }
 
+#my-projects-page-main-div{
+	flex: 1; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
+
+.platform-div{
+	width: 33.33%; 
+	text-align: center; 
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+#left-chevron, #right-chevron{
+	position: absolute;
+	z-index: 99;
+	height: calc(163px * 0.25);
+	width: calc(118px * 0.25);
+	top: calc(50vh - (163px * 0.25) + 45px);
+	background-size: cover;
+	display: none;
+}
+#left-chevron{
+	left: 30px;
+	background-image: url("./assets/images/chevron-left.png");
+}
+#right-chevron{
+	right: 30px;
+	background-image: url("./assets/images/chevron-right.png");
+}
 
 /* Mobile screens */
 @media (max-width: 730px) {
@@ -192,5 +219,17 @@ a{
 	}
 	#homepage-second-section{
 		font-size: 0.9rem;
+	}
+	#my-projects-page-main-div{
+		flex: auto;
+		overflow: scroll;
+		justify-content: flex-start;
+	}
+	.platform-div{
+		min-width: 100vw;
+		font-size: 1.5rem;
+	}
+	#left-chevron, #right-chevron{
+		display: block;
 	}
 }
