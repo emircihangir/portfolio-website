@@ -225,6 +225,12 @@ a {
 	width: auto;
 	max-height: 1000px;
 	object-fit: contain;
+	transition: 300ms;
+	cursor: pointer;
+}
+
+.project-gallery-div > img:hover{
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .fullscreen-gallery-div{
@@ -246,6 +252,14 @@ a {
 	background-position: center;
 	min-width: 100vw;
 	height: 100vh;
+}
+
+#close-fullscreen-button{
+	position: fixed;
+	right: 50px;
+	top: 50px;
+	z-index: 99;
+	cursor: pointer;
 }
 
 /* Mobile screens */
