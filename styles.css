@@ -46,18 +46,18 @@ mark {
 	padding: 15px;
 }
 
-#home-page-first-section{
-    flex: 1;
-    display: flex;
-    flex-direction: row;
+#home-page-first-section {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
 }
 
-#home-page-first-section-mobile{
-    display: none;
+#home-page-first-section-mobile {
+	display: none;
 }
 
-#first-section-text{
-    flex: 1;
+#first-section-text {
+	flex: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -66,30 +66,37 @@ mark {
 }
 
 #home-page-first-section-image {
-    flex: 1;
-    background-image: url(./assets/images/home-page-image-1.jpg);
-    background-position: right;
-    background-size: cover;
+	flex: 1;
+	background-image: url(./assets/images/home-page-image-1.jpg);
+	background-position: right;
+	background-size: cover;
 }
 
-#homepage-second-section, #homepage-third-section{
+#homepage-second-section,
+#homepage-third-section {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	margin-top: 50px;
 }
-#homepage-third-section{
+#homepage-third-section {
 	padding: 50px 0 50px 0;
 	position: relative;
 }
-#second-section-yellow-box{
-	height: 100px; width: 500px; background-color: var(--main-color);position: absolute;z-index: -1;
+#second-section-yellow-box {
+	height: 100px;
+	width: 500px;
+	background-color: var(--main-color);
+	position: absolute;
+	z-index: -1;
 }
-#second-section-text-div{
-	font-size: 2rem; font-weight: 200; line-height:2;
+#second-section-text-div {
+	font-size: 2rem;
+	font-weight: 200;
+	line-height: 2;
 }
 
-#third-section-image{
+#third-section-image {
 	background-image: url(./assets/images/third-section-image.jpg);
 	background-size: cover;
 	width: 700px;
@@ -100,10 +107,10 @@ mark {
 	z-index: -1;
 }
 
-#third-section-glass-div{
+#third-section-glass-div {
 	max-width: 600px;
 	overflow-wrap: break-word;
-	background: linear-gradient(90deg,rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 70%, rgba(243, 255, 83, 1) 100%);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 70%, rgba(243, 255, 83, 1) 100%);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
@@ -112,7 +119,7 @@ mark {
 	padding: 50px;
 }
 
-input[type="button"]{
+input[type="button"] {
 	background-color: white;
 	padding: 10px 15px 10px 15px;
 	border: 1px solid black;
@@ -122,32 +129,34 @@ input[type="button"]{
 	transition: 300ms;
 	font-style: italic;
 }
-input[type="button"]:hover{
+input[type="button"]:hover {
 	filter: invert(100%);
 }
-#third-section-glass-div > div{
-	text-align: left; font-size: 3rem;
+#third-section-glass-div > div {
+	text-align: left;
+	font-size: 3rem;
 }
-a{
+a {
 	text-decoration: none;
 	color: black;
 }
 
-#my-projects-page-main-div{
-	flex: 1; 
-	display: flex; 
-	justify-content: center; 
+#my-projects-page-main-div {
+	flex: 1;
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
-.platform-div{
-	width: 33.33%; 
-	text-align: center; 
+.platform-div {
+	width: 33.33%;
+	text-align: center;
 	font-size: 2rem;
 	cursor: pointer;
 }
 
-#left-chevron, #right-chevron{
+#left-chevron,
+#right-chevron {
 	position: absolute;
 	z-index: 99;
 	height: calc(163px * 0.25);
@@ -156,27 +165,92 @@ a{
 	background-size: cover;
 	display: none;
 }
-#left-chevron{
+#left-chevron {
 	left: 30px;
 	background-image: url("./assets/images/chevron-left.png");
 }
-#right-chevron{
+#right-chevron {
 	right: 30px;
 	background-image: url("./assets/images/chevron-right.png");
 }
-.app-div{
+.app-div {
 	width: min-content;
 	cursor: pointer;
 }
-.app-div-icon{
+.app-div-icon {
 	width: 250px;
 	height: 250px;
 	background-size: cover;
 }
+.project-title {
+	font-weight: 700;
+	font-size: 3rem;
+}
+.project-details {
+	text-align: justify;
+	flex: 2;
+}
+.project-title-container {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.project-title-container > * {
+	margin-bottom: 10px;
+}
+.store-badge-div {
+	cursor: pointer;
+	margin: 5px 5px 5px 0;
+}
+.store-badge-div > img {
+	height: 50px;
+}
+.project-header-div {
+	display: flex;
+	padding: 50px;
+	
+}
+.project-gallery-div{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	overflow: scroll;
+}
+.project-gallery-div > img{
+	margin: 5px;
+	height: 50vh;
+	width: auto;
+	max-height: 1000px;
+	object-fit: contain;
+}
+
+.fullscreen-gallery-div{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 99;
+	background-color: rgba(255, 255, 255, 1);
+	display: flex;
+	overflow: scroll;
+	display: none;
+}
+
+.fullscreen-image{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 100vw;
+	height: 100vh;
+}
 
 /* Mobile screens */
 @media (max-width: 730px) {
-	#first-section-text{
+	#first-section-text {
 		font-size: 2rem;
 	}
 
@@ -188,57 +262,69 @@ a{
 		margin: 20px;
 	}
 
-    #home-page-first-section{
-        display: none;
-    }
-    #home-page-first-section-mobile{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
+	#home-page-first-section {
+		display: none;
+	}
+	#home-page-first-section-mobile {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
 
 	#home-page-first-section-image {
-        flex: 3;
+		flex: 3;
 		background-image: url(./assets/images/home-page-image-1.jpg);
 		background-position: right;
 		background-size: cover;
 	}
-    
-    #first-section-text{
-        flex: 1;
-    }
 
-	#second-section-yellow-box{
+	#first-section-text {
+		flex: 1;
+	}
+
+	#second-section-yellow-box {
 		width: 70%;
 	}
-	#second-section-text-div{
-		font-size: 1.3rem; 
+	#second-section-text-div {
+		font-size: 1.3rem;
 	}
-	#third-section-image{
+	#third-section-image {
 		width: 100%;
 		position: static;
 	}
-	#third-section-glass-div{
+	#third-section-glass-div {
 		margin: 20px;
 		font-size: 0.9rem;
 		padding: 25px;
 	}
-	#third-section-glass-div > div{
+	#third-section-glass-div > div {
 		font-size: 1.5rem;
 	}
-	#homepage-second-section{
+	#homepage-second-section {
 		font-size: 0.9rem;
 	}
-	#my-projects-page-main-div{
+	#my-projects-page-main-div {
 		flex: auto;
 		overflow: scroll;
 		justify-content: flex-start;
 	}
-	.platform-div{
+	.platform-div {
 		min-width: 100vw;
 		font-size: 1.5rem;
 	}
-	#left-chevron, #right-chevron{
+	#left-chevron,
+	#right-chevron {
 		display: block;
+	}
+	.project-header-div {
+		flex-direction: column;
+	}
+	.store-badge-div > img {
+		height: 40px;
+	}
+	.project-header-div {
+		display: flex;
+		padding: 20px;
+		
 	}
 }
