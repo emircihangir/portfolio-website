@@ -164,6 +164,15 @@ a{
 	right: 30px;
 	background-image: url("./assets/images/chevron-right.png");
 }
+.app-div{
+	width: min-content;
+	cursor: pointer;
+}
+.app-div-icon{
+	width: 250px;
+	height: 250px;
+	background-size: cover;
+}
 
 /* Mobile screens */
 @media (max-width: 730px) {
