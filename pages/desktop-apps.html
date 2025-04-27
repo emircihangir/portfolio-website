@@ -8,20 +8,40 @@
     </head>
 
     <body>
-        <div class="navbar">
-            <div id="navbar-left-section">
-                <span style="font-weight: 700;">I'm Emir Cihangir,</span>
-                <a href="../index.html"><span style="font-weight: 300;">a <mark>Software Engineer.</mark></span></a>
+        <div style="display: flex; flex-direction: column;height: 100vh;">
+            <div class="navbar">
+                <div id="navbar-left-section">
+                    <span style="font-weight: 700;">I'm Emir Cihangir,</span>
+                    <a href="../index.html"><span style="font-weight: 300;">a <mark>Software Engineer.</mark></span></a>
+                </div>
+                
+                <div id="navbar-right-section">
+                    <a href="../index.html"><span>About Me</span></a>
+                    <a href="./my-projects.html"><span>My Projects</span></a>
+                    <a href="./blog.html"><span>Blog</span></a>
+                    <a href="./contact.html"><span>Contact</span></a>
+                </div>
             </div>
-            
-            <div id="navbar-right-section">
-                <a href="../index.html"><span>About Me</span></a>
-                <a href="./my-projects.html"><span>My Projects</span></a>
-                <a href="./blog.html"><span>Blog</span></a>
-                <a href="./contact.html"><span>Contact</span></a>
+
+            <div style="flex: 1; text-align: center;">
+                <div style="font-weight: 700; font-size: 3rem;margin: 50px 0px 15px 0px;">Desktop Apps</div> <br>
+                <div style="margin-bottom: 15px;">Applications designed for Windows, MacOS and Linux operating systems.</div>
+
+                <div style="display: flex;">
+
+                    <div class="app-div" data-appname="rebar-info">
+                        <div class="app-div-icon" style="background-image: url('../projects/rebar-info/assets/app-icon.png');"></div>
+                        Rebar Info
+                    </div>
+
+                    <div class="app-div" data-appname="batch-renamer">
+                        <div class="app-div-icon" style="background-image: url('../assets/images/scaffold-icon.png');"></div>
+                        Batch Renamer
+                    </div>
+                    
+                </div>
             </div>
         </div>
-
         
     </body>
 </html>
