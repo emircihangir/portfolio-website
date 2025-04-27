@@ -9,3 +9,10 @@ function chevronClicked(chevronType){
             behavior: 'smooth'});
     }
 }
+
+document.querySelectorAll(".app-div").forEach(div => {
+    div.onclick = function() {
+        var divAppName = div.getAttribute("data-appname");
+        window.location.href = "../projects/" + divAppName + "/" + divAppName + ".html";
+    };
+  });
