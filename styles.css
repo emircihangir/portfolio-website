@@ -67,7 +67,7 @@ mark {
 
 #home-page-first-section-image {
 	flex: 1;
-	background-image: url(./assets/images/home-page-image-1.jpg);
+	background-image: url(/assets/images/home-page-image-1.jpg);
 	background-position: right;
 	background-size: cover;
 }
@@ -97,7 +97,7 @@ mark {
 }
 
 #third-section-image {
-	background-image: url(./assets/images/third-section-image.jpg);
+	background-image: url(/assets/images/third-section-image.jpg);
 	background-size: cover;
 	width: 700px;
 	height: 550px;
@@ -167,11 +167,11 @@ a {
 }
 #left-chevron {
 	left: 30px;
-	background-image: url("./assets/images/chevron-left.png");
+	background-image: url("/assets/images/chevron-left.png");
 }
 #right-chevron {
 	right: 30px;
-	background-image: url("./assets/images/chevron-right.png");
+	background-image: url("/assets/images/chevron-right.png");
 }
 .app-div {
 	width: min-content;
@@ -286,7 +286,7 @@ a {
 }
 
 #close-contact-modal-button{
-	background-image: url("./assets/images/close.svg");
+	background-image: url("/assets/images/close.svg");
 	width: 30px;
 	height: 30px;
 	position: absolute;
@@ -323,7 +323,7 @@ a.contact-link{
 
 	#home-page-first-section-image {
 		flex: 3;
-		background-image: url(./assets/images/home-page-image-1.jpg);
+		background-image: url(/assets/images/home-page-image-1.jpg);
 		background-position: right;
 		background-size: cover;
 	}
