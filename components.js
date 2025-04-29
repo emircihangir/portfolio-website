@@ -19,5 +19,26 @@ class ContactModal extends HTMLElement {
       `;
     }
   }
-  
-  customElements.define('contact-modal', ContactModal);
+
+class Navbar extends HTMLElement{
+  connectedCallback(){
+    this.innerHTML = `
+      <div class="navbar">
+        <div id="navbar-left-section">
+            <span style="font-weight: 700;">I'm Emir Cihangir,</span>
+            <a href="/index.html"><span style="font-weight: 300;">a <mark>Software Engineer.</mark></span></a>
+        </div>
+        
+        <div id="navbar-right-section">
+            <a href="/index.html"><span>About Me</span></a>
+            <a href="/pages/my-projects.html"><span>My Projects</span></a>
+            <a href="/pages/blog.html"><span>Blog</span></a>
+            <a class="contact-link"><span>Contact</span></a>
+        </div>
+      </div>
+    `;
+  }
+}
+
+customElements.define('contact-modal', ContactModal);
+customElements.define('nav-bar', Navbar);
