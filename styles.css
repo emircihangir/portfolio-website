@@ -298,6 +298,33 @@ a.contact-link{
 	cursor: pointer;
 }
 
+.posts-container{
+	width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column;
+}
+.post-link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--navbar-background);
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.post-thumbnail{
+	background-size: contain;
+	width: 300px;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.post-link-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 450px;
+}
+
 /* Mobile screens */
 @media (max-width: 730px) {
 	#first-section-text {
