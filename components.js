@@ -40,5 +40,17 @@ class Navbar extends HTMLElement{
   }
 }
 
+class AppLink extends HTMLElement{
+  connectedCallback(){
+    this.innerHTML = `
+      <div class="app-div" data-appname="`+this.getAttribute("app-name")+`">
+          <div class="app-div-icon" style="background-image: url('/projects/`+this.getAttribute("app-name")+`/assets/app-icon.png');"></div>
+          `+this.getAttribute("app-title")+`
+      </div>
+    `;
+  }
+}
+
 customElements.define('contact-modal', ContactModal);
 customElements.define('nav-bar', Navbar);
+customElements.define('app-link', AppLink);
