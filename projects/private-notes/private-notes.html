@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/styles.css" />
+		<link rel="stylesheet" href="/font-faces.css" />
+        <script src="/components.js"></script>
+		<script src="/script.js" defer></script>
+		<script src="/projects/projects.js" defer></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Private Notes</title>
+	</head>
+
+	<body>
+		<nav-bar></nav-bar>
+
+        <div class="project-header-div">
+            <div class="project-title-container">
+                <div class="project-title">Private Notes</div>
+                <div>Currently in testing.</div>
+                <div style="display: flex; flex-wrap: wrap">
+                    <!-- <div class="store-badge-div" data-link="https://apps.apple.com/tr/app/i-nşaat-demiri-hesaplamaları/id6741046554?l=tr"><img src="/assets/images/appstore-badge.svg" /></div>
+                    <div class="store-badge-div" data-link="https://apps.apple.com/tr/app/i-nşaat-demiri-hesaplamaları/id6741118999?mt=12"><img src="/assets/images/mac-appstore-badge.svg" /></div>
+                    <div class="store-badge-div" data-link="https://play.google.com/store/apps/details?id=emir.rebarinfo&pcampaignid=web_share"><img src="/assets/images/playstore-badge.png" /></div> -->
+                    <div class="store-badge-div" data-link="https://github.com/emircihangir/private-notes-mobile-app"><img src="/assets/images/github-mark.svg" /></div>
+                </div>
+            </div>
+
+            <div class="project-details">
+                Private Notes is a simple, privacy-first app for writing and storing your personal notes. 
+                It works entirely offline, with no cloud sync or internet access, so your data never leaves 
+                your device. Everything is protected using AES-256 encryption — the same standard trusted 
+                by security professionals — ensuring your notes stay private and secure. The app is open source, 
+                with no accounts, no ads, and no tracking, giving you a clean, minimal space where you stay 
+                in full control of your information.
+            </div>
+        </div>
+
+        <div class="project-gallery-div">
+            <img src="./assets/image-1.svg "/>
+            <img src="./assets/image-2.svg "/>
+            <img src="./assets/image-3.svg "/>
+        </div>
+
+        <div class="fullscreen-gallery-div">
+            <div class="fullscreen-image" style="background-image: url('./assets/image-1.svg');"></div>
+            <div class="fullscreen-image" style="background-image: url('./assets/image-2.svg');"></div>
+            <div class="fullscreen-image" style="background-image: url('./assets/image-3.svg');"></div>
+
+            <div id="close-fullscreen-button"><img src="/assets/images/close.svg" width="50px"></div>
+        </div>
+
+        <contact-modal></contact-modal>
+	</body>
+</html>
