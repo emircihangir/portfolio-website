@@ -11,6 +11,61 @@
     <body>
         <nav-bar></nav-bar>
 
+        <div style="width: 100%; display: flex; justify-content: center;">
+            <div class="post-content">
+                <h1>Symbolic Computations in Python with SymPy</h1>
+                <small><i>February 10, 2025</i></small>
+
+                <br> <br>
+
+                SymPy is a Python library that allows you to do 
+                symbolic calculations. Its ease of use and lightweight 
+                structure have made it a popular choice among the scientific community. 
+                You can do all sorts of amazing things, and it really is a lifesaver 
+                when you find yourself buried under tons of equations and formulas. 
+                Here are a few ways you can use SymPy:
+
+                <br> <br>
+                
+                <h3>Before We Get Started</h3>
+                Please keep in mind that this tutorial assumes you have basic Python skills. Additionally, the following codes are meant to be executed inside a Jupyter Notebook.
+                <br>
+                Install the sympy library by running the following command in your terminal:
+                <br>
+                <div class="code">
+                    > pip install sympy
+                </div>
+                That's it, you're all set!
+
+                <br><br>
+                
+                <h3>Solving Equations</h3>
+                Let's start with the basics, and find the roots of an equation. 
+                <br>
+                <iframe style="width: 100%; height: 263px;" src="assets/iframe-1.html" frameborder="0"></iframe> 
+                <br>
+                The two parameters passed to the sympy.Eq are reffered to as the lhs (left-hand-side) and rhs (right-hand-side) respectively. You can access these properties like so:
+                <br>
+                <iframe style="width: 100%; height: 161px;" src="assets/iframe-2.html" frameborder="0"></iframe> 
+                <br>
+                The above example deals with a fairly straightforward equation, but SymPy becomes particularly useful when handling equations that would be too time-consuming 
+                to solve manually, such as this one below:
+                <br>
+                <iframe style="width: 100%; height: 178px;" src="assets/iframe-3.html" frameborder="0"></iframe> 
+                <br>
+
+                <br><br>
+                <h3>Expanding and Factorizing Expressions</h3>
+                You may come across situations where you need to expand or factorize a given expression. 
+                Luckily, SymPy is equipped with this:
+                <br>
+                <iframe style="width: 100%; height: 413px;" src="assets/iframe-4.html" frameborder="0"></iframe> 
+                <br>
+                This is just the tip of the iceberg. You can do much more with SymPy. Follow this <a href="https://www.sympy.org/en/index.html" target="_blank">link</a> to visit the
+                official documentation.
+
+            </div>
+        </div>
         
 
         <contact-modal></contact-modal>
