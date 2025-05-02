@@ -45,9 +45,12 @@ class AppLink extends HTMLElement{
     let iconType = this.getAttribute("icon-type");
     if(iconType == null) iconType = "png";
 
+    let backgroundImage = "/projects/" + this.getAttribute("app-name") + "/assets/app-icon." + iconType;
+    if(this.getAttribute("scaffold-icon") == "true") backgroundImage = "/assets/images/scaffold-icon.svg";
+
     this.innerHTML = `
       <div class="app-div" data-appname="`+this.getAttribute("app-name")+`">
-          <div class="app-div-icon" style="background-image: url('/projects/`+this.getAttribute("app-name")+`/assets/app-icon.`+iconType+`');"></div>
+          <div class="app-div-icon" style="background-image: url('`+backgroundImage+`');"></div>
           `+this.getAttribute("app-title")+`
       </div>
     `;
