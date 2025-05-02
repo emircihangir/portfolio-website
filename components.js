@@ -42,9 +42,12 @@ class Navbar extends HTMLElement{
 
 class AppLink extends HTMLElement{
   connectedCallback(){
+    let iconType = this.getAttribute("icon-type");
+    if(iconType == null) iconType = "png";
+
     this.innerHTML = `
       <div class="app-div" data-appname="`+this.getAttribute("app-name")+`">
-          <div class="app-div-icon" style="background-image: url('/projects/`+this.getAttribute("app-name")+`/assets/app-icon.png');"></div>
+          <div class="app-div-icon" style="background-image: url('/projects/`+this.getAttribute("app-name")+`/assets/app-icon.`+iconType+`');"></div>
           `+this.getAttribute("app-title")+`
       </div>
     `;
