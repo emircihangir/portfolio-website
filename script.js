@@ -21,16 +21,20 @@ document.querySelectorAll(".app-div").forEach(div => {
     };
 });
 
-document.querySelector('#close-contact-modal-button').onclick = function () {
+document.querySelector('#close-contact-modal-button').onclick = closeContactModal;
+
+document.querySelectorAll("a.contact-link").forEach(a => {
+    a.onclick = openContactModal;
+});
+
+function closeContactModal(){
     document.querySelector('#contact-modal').style.opacity = '0';
     setTimeout(() => {
           document.querySelector('#contact-modal').style.display='none';
     }, 300);
-};
+}
 
-document.querySelectorAll("a.contact-link").forEach(a => {
-    a.onclick = () => {
-        document.querySelector('#contact-modal').style.display='flex';
-        requestAnimationFrame(()=> document.querySelector('#contact-modal').style.opacity = '1');
-    };
-});
+function openContactModal(){
+    document.querySelector('#contact-modal').style.display='flex';
+    requestAnimationFrame(()=> document.querySelector('#contact-modal').style.opacity = '1');
+}
