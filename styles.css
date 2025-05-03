@@ -367,8 +367,18 @@ a.contact-link{
 	filter: invert(100%);
 }
 
+#contact-modal-panel{
+	padding: 50px; background-color: white;border: 1px solid black; position: inherit;
+}
+
 /* Mobile screens */
 @media (max-width: 730px) {
+
+	#contact-modal-panel{
+		background-color: white;
+		border: none;
+	}
+
 	#first-section-text {
 		font-size: 2rem;
 	}

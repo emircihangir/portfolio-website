@@ -2,7 +2,7 @@ class ContactModal extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
         <div id="contact-modal">
-            <div style="padding: 50px; background-color: white;border: 1px solid black; position: inherit;">
+            <div id="contact-modal-panel">
                 <div id="close-contact-modal-button"></div>
 
                 <p style="font-size: 48px; position: relative; z-index: 99; font-weight: 600;">Contact</p>
