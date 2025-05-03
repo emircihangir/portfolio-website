@@ -309,6 +309,7 @@ a.contact-link{
 }
 .post-link{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	border: 1px solid var(--navbar-background);
@@ -371,8 +372,37 @@ a.contact-link{
 	padding: 50px; background-color: white;border: 1px solid black; position: inherit;
 }
 
+.post-link-date{
+	font-style: italic; font-size: 12px; font-weight: 300;
+}
+
+.post-link-title{
+	font-size: 24px; margin: 10px 0 10px 0;
+}
+
+.post-link-details{
+	font-weight: 300;
+}
+
 /* Mobile screens */
 @media (max-width: 730px) {
+	.post-link{
+		width: 90%;
+		padding: 10px;
+	}
+
+	.post-link-date{
+		font-size: 11px;
+	}
+
+	.post-link-title{
+		font-size: 16px; margin: 10px 0 10px 0;
+	}
+	
+	.post-link-details{
+		font-weight: 300;
+		font-size: 12px;
+	}
 
 	#contact-modal-panel{
 		background-color: white;
