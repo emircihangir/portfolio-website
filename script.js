@@ -38,3 +38,10 @@ function openContactModal(){
     document.querySelector('#contact-modal').style.display='flex';
     requestAnimationFrame(()=> document.querySelector('#contact-modal').style.opacity = '1');
 }
+
+document.querySelector("#navbar-right-section").onclick = () => {
+    if(getComputedStyle(document.querySelectorAll("#navbar-right-section a")[0]).display == "none"){ // is a mobile screen.
+        document.querySelector("#mobile-menu-modal").classList.toggle("open");
+        document.querySelector("#navbar-right-section").classList.toggle("inverted");
+    }
+}

@@ -36,6 +36,18 @@ class Navbar extends HTMLElement{
             <a class="contact-link"><span>Contact</span></a>
         </div>
       </div>
+
+      <div id="mobile-menu-modal">
+        <br>
+        <a href="/index.html"><span>About Me</span></a>
+        <br>
+        <a href="/pages/my-projects.html"><span>My Projects</span></a>
+        <br>
+        <a href="/pages/blog.html"><span>Blog</span></a>
+        <br>
+        <a class="contact-link"><span>Contact</span></a>
+        <br>
+      </div>
     `;
   }
 }
