@@ -153,11 +153,15 @@ a{
 }
 
 .platform-div {
-	width: 33.33%;
 	text-align: center;
 	font-size: 2rem;
 	cursor: pointer;
-	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+}
+.platform-div img{
+	max-height: 320px;
 }
 
 #left-chevron,
