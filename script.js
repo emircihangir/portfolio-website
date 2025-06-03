@@ -3,12 +3,12 @@ function chevronClicked(chevronType) {
 
     if (chevronType == "left") {
         container.scrollBy({
-            left: container.scrollWidth * (-1 / 4),
+            left: container.scrollWidth * (-1 / 3),
             behavior: 'smooth'
         });
     } else {
         container.scrollBy({
-            left: container.scrollWidth * (1 / 4),
+            left: container.scrollWidth * (1 / 3),
             behavior: 'smooth'
         });
     }
