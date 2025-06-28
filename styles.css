@@ -388,6 +388,10 @@ a.contact-link{
 	font-weight: 300;
 }
 
+.post-content img{
+	max-width: 800px;
+}
+
 /* Mobile screens */
 @media (max-width: 730px) {
 	.post-link{
