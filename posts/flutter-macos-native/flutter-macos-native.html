@@ -5,7 +5,7 @@
         <script src="/components.js"></script>
         <script src="/script.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Making a Flutter Mac App Look More Native</title>
+        <title>Make Your Flutter macOS App Feel Truly Native</title>
     </head>
 
     <body>
@@ -13,16 +13,15 @@
 
         <div style="width: 100%; display: flex; justify-content: center;">
             <div class="post-content">
-                <h1>Making a Flutter Mac App Look More Native</h1>
+                <h1>How to Make Your Flutter macOS App Look and Feel Native</h1>
                 <small><i>June 28, 2025</i></small>
                 <br> <br>
-
-                Flutter, by default, uses Material widgets, and Material Design has a different logic and style compared to Apple's Cupertino design.
+                By default, Flutter uses Material Design, which is built around Android's visual language. While great for cross-platform apps, it clashes with the native look and feel of macOS, which follows Apple’s distinct design guidelines.
                 For comparison, here's what a boilerplate Flutter Mac app looks like:
                 <br>
                 <img src="assets/pic-1.png">
                 <br>
-                You can change the widgets, of course, but the app still looks quite different from what Mac users are used to:
+                Even if you replace some widgets, the app still feels out of place for Mac users:
                 <br>
                 <!-- TODO: slider is not obvious -->
                 <div style="display: flex; overflow: scroll; align-items: center;">
@@ -37,9 +36,7 @@
                 <!-- TODO: add link to macos_ui -->
 
                 <h3>Using a package</h3>
-                You can use a package like macos_ui, but it comes with several disadvantages.
-                First of all, relying on such a package means your app's UI is tied to third-party code.
-                This limits your control over both the package and your app's UI design.
+                A common option is using a package like <code>macos_ui</code>. While convenient, it has downsides: you’re tying your app’s UI to third-party code, which limits flexibility and control.
                 <br>
                 Furthermore, macOS UI is constantly evolving. Just a week ago, Apple released macOS Tahoe, which introduced a new aesthetic compared to the previous version.
                 If you had built your app with this package, you might now find the UI outdated and no longer aligned with Apple's design language.
@@ -54,8 +51,7 @@
                 So then, what should we do? Here's my solution:
                 <br><br>
                 <h3>Something in between</h3>
-                Don't use a third-party package, but don't spend too much time copying MacOS UI either. There are a few simple things you can do
-                that makes the app less strange. Not totally native, but less strange. Let's start by changing the app bar and some colors.
+                The sweet spot lies in between: avoid third-party UI packages, but also skip obsessively replicating macOS components. Instead, use subtle enhancements to make your app feel more at home on macOS. Let's start by changing the app bar and some colors.
                 <br><br>
                 As you may have noticed, there is a slight purple tint as the background color in our Flutter app. Let's change that.
                 Update your main.dart file per following:
@@ -93,9 +89,10 @@
                     <img src="assets/pic-7.png">
                 </div>
                 <br>
-                We've accomplished to make our app look much more native with a few simple tricks.
+                With just a few simple tweaks, we've made our app look and feel significantly more native.
                 <br><br>
                 Happy coding!
+                If you found this helpful, feel free to share it or drop a comment below!
                 <!-- TODO: Responsive UI -->
 
             </div>
