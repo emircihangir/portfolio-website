@@ -13,7 +13,91 @@
 
         <div style="width: 100%; display: flex; justify-content: center;">
             <div class="post-content">
-                
+                <h1>Making a Flutter Mac App Look More Native</h1>
+                <small><i>June 28, 2025</i></small>
+                <br> <br>
+
+                Flutter, by default, uses Material widgets, and Material Design has a different logic and style compared to Apple's Cupertino design.
+                For comparison, here's what a boilerplate Flutter Mac app looks like:
+                <br>
+                <img src="assets/pic-1.png">
+                <br>
+                You can change the widgets, of course, but the app still looks quite different from what Mac users are used to:
+                <br>
+                <!-- TODO: slider is not obvious -->
+                <div style="display: flex; overflow: scroll; align-items: center;">
+                    <img src="assets/pic-2.png">
+                    <img src="assets/pic-3.png">
+                    <img src="assets/pic-4.png">
+                </div>
+                <br>
+                So what can we do to change this? Well, there are a few options:
+                <br><br>
+
+                <!-- TODO: add link to macos_ui -->
+
+                <h3>Using a package</h3>
+                You can use a package like macos_ui, but it comes with several disadvantages.
+                First of all, relying on such a package means your app's UI is tied to third-party code.
+                This limits your control over both the package and your app's UI design.
+                <br>
+                Furthermore, macOS UI is constantly evolving. Just a week ago, Apple released macOS Tahoe, which introduced a new aesthetic compared to the previous version.
+                If you had built your app with this package, you might now find the UI outdated and no longer aligned with Apple's design language.
+
+                <br><br>
+
+                <h3>Manually styling the entire app</h3>
+                You could manually style every part of the app to better match the macOS design language, but this would be very time-consuming and impractical.
+                The problem of fluidity of design languages still persists with this option, because if Apple were to release another UI update (which they will, eventually),
+                you'd have to restyle every component all over again.
+                <br><br>
+                So then, what should we do? Here's my solution:
+                <br><br>
+                <h3>Something in between</h3>
+                Don't use a third-party package, but don't spend too much time copying MacOS UI either. There are a few simple things you can do
+                that makes the app less strange. Not totally native, but less strange. Let's start by changing the app bar and some colors.
+                <br><br>
+                As you may have noticed, there is a slight purple tint as the background color in our Flutter app. Let's change that.
+                Update your main.dart file per following:
+                <br><br>
+                <script src="https://gist.github.com/emircihangir/b68595aee01b76965324df39ca44f803.js"></script>
+                <br><br>
+                <script src="https://gist.github.com/emircihangir/e872815f36d02516370b504ba6fe3b99.js"></script>
+                <br><br>
+                Now, our app looks like this:
+                <br>
+                <img src="assets/pic-5.png" alt="">
+                <br>
+                Hang in there, we have a few more things to do.
+                <br>
+                The next step is to tap into Xcode for some native adjustments. Open the macos folder in Xcode and make these changes:
+                <br><br>
+                <img src="assets/tutorial-video-720p.gif">
+                <br><br>
+                Now, our app looks like this:
+                <br>
+                <img src="assets/pic-6.png">
+                <br>
+                We're getting closer. Lastly, we will move the floating aciton button to the title bar. Make these changes to your code:
+                <br><br>
+                <script src="https://gist.github.com/emircihangir/d5bfd1ee0e8c6ddd1e23a0c2f2d7987b.js"></script>
+                <br><br>
+                <script src="https://gist.github.com/emircihangir/bef5b5f58ada4444e8051141b5fca395.js"></script>
+                <br><br>
+                Now, our app looks like this:
+                <img src="assets/pic-7.png">
+                <br>
+                Here is a before and after comparison:
+                <div style="display: flex; overflow: scroll; align-items: center; justify-content: center;">
+                    <img src="assets/pic-1.png">
+                    <img src="assets/pic-7.png">
+                </div>
+                <br>
+                We've accomplished to make our app look much more native with a few simple tricks.
+                <br><br>
+                Happy coding!
+                <!-- TODO: Responsive UI -->
+
             </div>
         </div>
         
