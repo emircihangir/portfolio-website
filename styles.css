@@ -392,6 +392,24 @@ a.contact-link{
 	max-width: 800px;
 }
 
+.scroll-container {
+  overflow-x: scroll;                /* Forces horizontal scrollbar */
+  overflow-y: hidden;               /* Optional: hides vertical scrollbar */
+  white-space: nowrap;              /* Keeps content on one line */
+  -webkit-overflow-scrolling: auto; /* Avoids momentum scrolling on macOS */
+  display: flex;
+  align-items: center;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 12px;                      /* Show horizontal scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
 /* Mobile screens */
 @media (max-width: 730px) {
 	.post-link{
