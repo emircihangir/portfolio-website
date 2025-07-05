@@ -1,32 +1,42 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="stylesheet" href="/font-faces.css">
-        <script src="/components.js"></script>
-        <script src="/script.js" defer></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-    </head>
+	<head>
+		<link rel="stylesheet" href="/styles.css" />
+		<link rel="stylesheet" href="/font-faces.css" />
+		<script src="/components.js"></script>
+		<script src="/script.js" defer></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blog</title>
+	</head>
 
-    <body>
-        <nav-bar></nav-bar>
+	<body>
+		<nav-bar></nav-bar>
 
-        <p style="font-weight: 500; font-size: 48px;margin: 50px 0 0 0; text-align: center;">Blog</p>
+		<p style="font-weight: 500; font-size: 48px; margin: 50px 0 0 0; text-align: center">Blog</p>
 
-        <div class="posts-container">
+		<div class="posts-container">
 
-            <div class="post-link" onclick="window.location.href = '/posts/python-sympy/python-sympy.html'">
-                <div class="post-thumbnail" style="background-image: url('/posts/python-sympy/assets/thumbnail.png');"></div>
-    
-                <div class="post-link-text">
-                    <p class="post-link-date">February 10, 2025</p>
-                    <p class="post-link-title">Symbolic Computations in Python with Sympy</p>
-                    <p class="post-link-details">From algebra to calculus to solving equations — Sympy handles it all.</p>
-                </div>
-            </div>
+            <div class="post-link" onclick="window.location.href = '/posts/flutter-macos-native/flutter-macos-native.html'">
+				<div class="post-thumbnail" style="background-image: url('/posts/flutter-macos-native/assets/thumbnail.png')"></div>
 
-        </div>
+				<div class="post-link-text">
+					<p class="post-link-date">July 5, 2025</p>
+					<p class="post-link-title">How to Make Your Flutter macOS App Look and Feel Native</p>
+					<p class="post-link-details">...by getting rid of that strange purple boilerplate app.</p>
+				</div>
+			</div>
 
-        <contact-modal></contact-modal>
-    </body>
+			<div class="post-link" onclick="window.location.href = '/posts/python-sympy/python-sympy.html'">
+				<div class="post-thumbnail" style="background-image: url('/posts/python-sympy/assets/thumbnail.png')"></div>
+
+				<div class="post-link-text">
+					<p class="post-link-date">February 10, 2025</p>
+					<p class="post-link-title">Symbolic Computations in Python with Sympy</p>
+					<p class="post-link-details">From algebra to calculus to solving equations — Sympy handles it all.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<contact-modal></contact-modal>
+	</body>
 </html>
