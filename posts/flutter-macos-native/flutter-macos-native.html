@@ -15,28 +15,27 @@
             <div class="post-content">
                 <h1>How to Make Your Flutter macOS App Look and Feel Native</h1>
                 <small><i>June 28, 2025</i></small>
-                <br> <br>
-                By default, Flutter uses Material Design, which is built around Android's visual language. While great for cross-platform apps, it clashes with the native look and feel of macOS, which follows Apple’s distinct design guidelines.
+                <br>
+                <br>
+                By default, Flutter uses Material Design, which is built around Android's visual language. While great for cross-platform apps, it clashes with the native look and feel of macOS, which follows Apple's distinct design guidelines.
                 For comparison, here's what a boilerplate Flutter Mac app looks like:
                 <br>
-                <img src="assets/pic-1.png">
+                <img loading="lazy"  class="window-ss" src="assets/pic-1.png">
                 <br>
                 Even if you replace some widgets, the app still feels out of place for Mac users:
                 <br>
-                <!-- TODO: slider is not obvious -->
+
                 <div class="scroll-container">
-                    <img src="assets/pic-2.png">
-                    <img src="assets/pic-3.png">
-                    <img src="assets/pic-4.png">
+                    <img loading="lazy"  class="window-ss" src="assets/pic-2.png" style="max-width: 700px;">
+                    <img loading="lazy"  class="window-ss" src="assets/pic-3.png" style="max-width: 700px; margin-left: 16px;">
+                    <img loading="lazy"  class="window-ss" src="assets/pic-4.png" style="max-width: 700px; margin-left: 16px;">
                 </div>
                 <br>
                 So what can we do to change this? Well, there are a few options:
                 <br><br>
 
-                <!-- TODO: add link to macos_ui -->
-
                 <h3>Using a package</h3>
-                A common option is using a package like <code>macos_ui</code>. While convenient, it has downsides: you’re tying your app’s UI to third-party code, which limits flexibility and control.
+                A common option is using a package like <a href="https://pub.dev/packages/macos_ui" target="_blank">macos_ui</a>. While convenient, it has downsides: you're tying your app's UI to third-party code, which limits flexibility and control.
                 <br>
                 Furthermore, macOS UI is constantly evolving. Just a week ago, Apple released macOS Tahoe, which introduced a new aesthetic compared to the previous version.
                 If you had built your app with this package, you might now find the UI outdated and no longer aligned with Apple's design language.
@@ -55,44 +54,39 @@
                 <br><br>
                 As you may have noticed, there is a slight purple tint as the background color in our Flutter app. Let's change that.
                 Update your main.dart file per following:
-                <br><br>
-                <script src="https://gist.github.com/emircihangir/b68595aee01b76965324df39ca44f803.js"></script>
-                <br><br>
-                <script src="https://gist.github.com/emircihangir/e872815f36d02516370b504ba6fe3b99.js"></script>
-                <br><br>
+
+                <img loading="lazy"  src="assets/code-pic-1.png" class="window-ss">
+                <img loading="lazy"  src="assets/code-pic-2.png" class="window-ss">
+
                 Now, our app looks like this:
                 <br>
-                <img src="assets/pic-5.png" alt="">
+                <img loading="lazy" class="window-ss" src="assets/pic-5.png" alt="">
                 <br>
                 Hang in there, we have a few more things to do.
                 <br>
                 The next step is to tap into Xcode for some native adjustments. Open the macos folder in Xcode and make these changes:
-                <br><br>
-                <img src="assets/tutorial-video-720p.gif">
-                <br><br>
+
+                <img loading="lazy"  src="assets/tutorial-video-720p.gif">
+
                 Now, our app looks like this:
                 <br>
-                <img src="assets/pic-6.png">
+                <img loading="lazy" class="window-ss" src="assets/pic-6.png">
                 <br>
                 We're getting closer. Lastly, we will move the floating aciton button to the title bar. Make these changes to your code:
-                <br><br>
-                <script src="https://gist.github.com/emircihangir/d5bfd1ee0e8c6ddd1e23a0c2f2d7987b.js"></script>
-                <br><br>
-                <script src="https://gist.github.com/emircihangir/bef5b5f58ada4444e8051141b5fca395.js"></script>
-                <br><br>
-                Now, our app looks like this:
-                <img src="assets/pic-7.png">
+                <img loading="lazy" class="window-ss" src="assets/code-pic-3.png">
+                <img loading="lazy" class="window-ss" src="assets/code-pic-4.png">
+                This is the final look of our app:
+                <img loading="lazy" class="window-ss" src="assets/pic-7.png">
                 <br>
                 Here is a before and after comparison:
                 <div class="scroll-container">
-                    <img src="assets/pic-1.png">
-                    <img src="assets/pic-7.png">
+                    <img loading="lazy" class="window-ss" src="assets/pic-1.png" style="max-width: 700px;">
+                    <img loading="lazy" class="window-ss" src="assets/pic-7.png" style="margin-left: 16px; max-width: 700px;">
                 </div>
                 <br>
                 With just a few simple tweaks, we've made our app look and feel significantly more native.
-                <br><br>
-                Happy coding!
                 <!-- TODO: Responsive UI -->
+                <!-- TODO: Thumbnail -->
 
             </div>
         </div>
