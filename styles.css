@@ -155,11 +155,12 @@ a {
 
 .platform-div {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.2rem;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	width: 25%;
+	text-wrap-mode: nowrap;
 }
 .platform-div img {
 	max-height: 320px;
