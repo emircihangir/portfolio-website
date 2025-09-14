@@ -31,6 +31,7 @@ class Navbar extends HTMLElement{
         
         <div id="navbar-right-section">
             <a href="/index.html"><span>About Me</span></a>
+            <a href="/assets/resume.pdf"><span>My Resumé</span></a>
             <a href="/pages/my-projects.html"><span>My Projects</span></a>
             <a href="/pages/blog.html"><span>Blog</span></a>
             <a class="contact-link"><span>Contact</span></a>
@@ -40,6 +41,8 @@ class Navbar extends HTMLElement{
       <div id="mobile-menu-modal">
         <br>
         <a href="/index.html"><span>About Me</span></a>
+        <br>
+        <a href="/assets/resume.pdf"><span>My Resumé</span></a>
         <br>
         <a href="/pages/my-projects.html"><span>My Projects</span></a>
         <br>
