@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/styles.css" />
+		<link rel="stylesheet" href="/font-faces.css" />
+		<script src="/components.js"></script>
+		<script src="/script.js" defer></script>
+		<script src="/projects/projects.js" defer></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Signature Analysis</title>
+	</head>
+
+	<body>
+		<nav-bar></nav-bar>
+
+		<div class="project-header-div">
+			<div class="project-title-container">
+				<div class="project-title">Signature Analysis</div>
+				<div>Release Date: September 2025</div>
+				<div style="display: flex; flex-wrap: wrap">
+					<div class="store-badge-div" data-link="https://github.com/emircihangir/signature-analysis"><img src="/assets/images/github-mark.svg" /></div>
+				</div>
+			</div>
+
+			<div class="project-details">
+				Signature Analysis is an AI model capable of recognizing my handwriting. It was trained on around 4000 samples of the letter “A” written by me (labeled
+				1) and others (labeled 0). I decided to base the project only on the letter “A” to reduce the sample space and the required training data, as it would
+				reduce variance. Visit the GitHub page linked below the title for more information. 
+			</div>
+		</div>
+
+		<div class="project-gallery-div">
+			<img src="./assets/plot-1.png " />
+			<img src="./assets/plot-2.png " />
+			<img src="./assets/plot-3.png " />
+		</div>
+
+		<div class="fullscreen-gallery-div">
+			<div class="fullscreen-image" style="background-image: url('./assets/plot-1.png')"></div>
+			<div class="fullscreen-image" style="background-image: url('./assets/plot-2.png')"></div>
+			<div class="fullscreen-image" style="background-image: url('./assets/plot-3.png')"></div>
+
+			<div id="close-fullscreen-button"><img src="/assets/images/close.svg" width="50px" /></div>
+		</div>
+
+		<contact-modal></contact-modal>
+	</body>
+</html>
