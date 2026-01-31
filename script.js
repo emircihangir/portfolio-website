@@ -14,7 +14,7 @@ function chevronClicked(chevronType) {
     }
 }
 
-document.querySelectorAll(".app-div").forEach(div => {
+document.querySelectorAll(".project-link").forEach(div => {
     div.onclick = function () {
         var divAppName = div.getAttribute("data-appname");
         window.location.href = "/projects/" + divAppName + "/" + divAppName + ".html";

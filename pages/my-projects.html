@@ -1,40 +1,61 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="/styles.css">
-        <link rel="stylesheet" href="/font-faces.css">
-        <script src="/components.js"></script>
-        <script src="/script.js" defer></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Projects</title>
-    </head>
+	<head>
+		<link rel="stylesheet" href="/styles.css" />
+		<link rel="stylesheet" href="/font-faces.css" />
+		<script src="/components.js"></script>
+		<script src="/script.js" defer></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Projects</title>
+	</head>
 
-    <body>
-        <div style="display: flex; flex-direction: column;height: 100%;width: 100%;">
-            <nav-bar></nav-bar>
+	<body>
+		<div style="display: flex; flex-direction: column; height: 100%; width: 100%">
+			<nav-bar></nav-bar>
 
-            <div id="my-projects-page-main-div">
-                <div class="platform-div" onclick="window.location.href = 'python-projects.html';">
-                    <img src="/assets/images/python.svg">
-                    <span>Python Projects</span>
-                </div>
-                <div class="platform-div" onclick="window.location.href = 'mobile-apps.html';">
-                    <img src="/assets/images/mobile.svg">
-                    <span>Mobile Apps</span>
-                </div>
-                <div class="platform-div" onclick="window.location.href = 'desktop-apps.html';">
-                    <img src="/assets/images/desktop.svg">
-                    <span>Desktop Apps</span>
-                </div>
-                <div class="platform-div" onclick="window.location.href = 'web-apps.html';">
-                    <img src="/assets/images/web.svg">
-                    <span>Web Apps</span>
-                </div>
-            </div>
-        </div>
+			<div id="my-projects-page-main-div">
+				<div class="project-link-container">
+					<project-link
+						app-title="Batch Renamer"
+						app-name="batch-renamer"
+						app-description="A high-performance desktop tool to rename thousands of files using stackable operations and live previews."
+						supported-platforms="macos, windows"
+					></project-link>
+					<project-link
+						app-title="Private Notes"
+						app-name="private-notes"
+						app-description="Provides secure, AES-256 encrypted, offline-only note-taking in an open-source, ad-free environment with zero tracking."
+						supported-platforms="ios, android"
+					></project-link>
+					<project-link
+						app-title="Project Service Fee Calculator"
+						app-name="project-service-fee-calculator"
+						scaffold-icon="true"
+						app-description="Calculate civil engineering supervising fees based on TCCE (Turkish Chamber of Civil Engineers) methods."
+						supported-platforms="web"
+					></project-link>
+					<project-link
+						app-title="Rebar Info"
+						app-name="rebar-info"
+						app-description="Essential Ø8-Ø50 rebar weight, cross-section, and conversion calculator for Civil Engineers, with more features coming via user feedback."
+						supported-platforms="ios, android, macos"
+					></project-link>
+					<project-link
+						app-title="Signature Analysis"
+						app-name="signature-analysis"
+						app-description="An AI model trained on 4,000 samples to recognize my handwriting by focusing specifically on the letter 'A' to minimize variance and data requirements."
+						supported-platforms="python"
+					></project-link>
+					<project-link
+						app-title="Supervising Fee Calculator"
+						app-name="supervising-fee-calculator"
+						scaffold-icon="true"
+						app-description="Calculate Civil Engineering supervision fees using official Turkish Chamber of Civil Engineers (İMO) methodologies."
+						supported-platforms="web"
+					></project-link>
+				</div>
+			</div>
+		</div>
 
-        <div id="left-chevron" onclick="chevronClicked('left')"></div>
-        <div id="right-chevron" onclick="chevronClicked('right')"></div>
-
-        <contact-modal></contact-modal>
-    </body>
+		<contact-modal></contact-modal>
+	</body>
 </html>
