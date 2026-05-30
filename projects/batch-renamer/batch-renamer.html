@@ -1,45 +1,50 @@
-<html>
-	<head>
-		<link rel="stylesheet" href="/styles.css" />
-		<link rel="stylesheet" href="/font-faces.css" />
-        <script src="/components.js"></script>
-		<script src="/script.js" defer></script>
-		<script src="/projects/projects.js" defer></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Batch Renamer</title>
-	</head>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="stylesheet" href="/font-faces.css"/>
+    <script src="/components.js"></script>
+    <script src="/script.js" defer></script>
+    <script src="/projects/projects.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Batch Renamer</title>
+</head>
 
-	<body>
-		<nav-bar></nav-bar>
+<body>
+<nav-bar></nav-bar>
 
-        <div class="project-header-div">
-            <div class="project-title-container">
-                <div class="project-title">Batch Renamer</div>
-                <div>Release Date: February 2026</div>
-                <div style="display: flex; flex-wrap: wrap">
-                    <div class="store-badge-div" data-link="https://github.com/emircihangir/batch-renamer"><img src="/assets/images/github_logo.svg" /></div>
-                </div>
-            </div>
-
-            <div class="project-details">
-                A macOS desktop utility built with <b>Flutter</b> (Windows version in progress) to streamline file organization using stackable renaming operations.
-                <br><br>
-                It supports inserting text, numbering, character replacement, and case changes. The app utilizes <b>Riverpod</b> for state management and <b>Isolates</b> to process large datasets (3000+ files) without UI freezing. Features include live preview, duplicate detection, and <b>Sentry</b> integration for error monitoring.
-            </div>
+<div class="project-header-div">
+    <div class="project-title-container">
+        <div class="project-title">Batch Renamer</div>
+        <div>Release Date: February 2026</div>
+        <div style="display: flex; flex-wrap: wrap">
+            <div class="store-badge-div" data-link="https://github.com/emircihangir/batch-renamer"><img
+                    src="/assets/images/github_logo.svg" alt=""/></div>
         </div>
+    </div>
 
-        <div class="project-gallery-div">
-            <img src="./assets/SS-1.png"/>
-            <img src="./assets/SS-2.png"/>
-        </div>
+    <div class="project-details">
+        A macOS desktop utility built with <b>Flutter</b> (Windows version in progress) to streamline file organization
+        using stackable renaming operations.
+        <br><br>
+        It supports inserting text, numbering, character replacement, and case changes. The app utilizes <b>Riverpod</b>
+        for state management and <b>Isolates</b> to process large datasets (3000+ files) without UI freezing. Features
+        include live preview, duplicate detection, and <b>Sentry</b> integration for error monitoring.
+    </div>
+</div>
 
-        <div class="fullscreen-gallery-div">
-            <div class="fullscreen-image" style="background-image: url('./assets/SS-1.png');"></div>
-            <div class="fullscreen-image" style="background-image: url('./assets/SS-2.png');"></div>
+<div class="project-gallery-div">
+    <img src="./assets/SS-1.png" alt=""/>
+    <img src="./assets/SS-2.png"/>
+</div>
 
-            <div id="close-fullscreen-button"><img src="/assets/images/close.svg" width="50px"></div>
-        </div>
+<div class="fullscreen-gallery-div">
+    <div class="fullscreen-image" style="background-image: url('./assets/SS-1.png');"></div>
+    <div class="fullscreen-image" style="background-image: url('./assets/SS-2.png');"></div>
 
-        <contact-modal></contact-modal>
-	</body>
+    <div id="close-fullscreen-button"><img src="/assets/images/close.svg" width="50px"></div>
+</div>
+
+<contact-modal></contact-modal>
+</body>
 </html>
