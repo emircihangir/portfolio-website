@@ -1,4 +1,4 @@
-var fullScreenGallery = document.querySelector(".fullscreen-gallery-div");
+let fullScreenGallery = document.querySelector(".fullscreen-gallery-div");
 
 document.querySelectorAll(".project-gallery-div > img").forEach(img => {
     img.onclick = function () {

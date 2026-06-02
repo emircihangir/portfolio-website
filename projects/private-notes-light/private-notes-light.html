@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="stylesheet" href="/font-faces.css"/>
+    <script src="/components.js"></script>
+    <script src="/script.js" defer></script>
+    <script src="/projects/projects.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Private Notes</title>
+</head>
+
+<body>
+<nav-bar></nav-bar>
+
+<div class="project-header-div">
+    <div class="project-title-container">
+        <div class="project-title">Private Notes - Light</div>
+        <div>Currently in testing.</div>
+        <div style="display: flex; flex-wrap: wrap">
+            <div class="store-badge-div" data-link="https://github.com/emircihangir/private_notes_light">
+                <img src="/assets/images/github_logo.svg"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-details">
+        A local-first Flutter notes app that keeps your data entirely on-device and under your control. It encrypts
+        every note with strong cryptography and handles authentication securely without relying on servers or accounts.
+        Backup and restore are built in, along with automatic locking, recovery options, and fast search for everyday
+        use.
+    </div>
+</div>
+
+<div class="project-gallery-div">
+    <img src="assets/image-1.svg " alt=""/>
+    <img src="assets/image-2.svg " alt=""/>
+    <img src="assets/image-3.svg " alt=""/>
+</div>
+
+<div class="fullscreen-gallery-div">
+    <div class="fullscreen-image" style="background-image: url('assets/image-1.svg');"></div>
+    <div class="fullscreen-image" style="background-image: url('assets/image-2.svg');"></div>
+    <div class="fullscreen-image" style="background-image: url('assets/image-3.svg');"></div>
+
+    <div id="close-fullscreen-button"><img src="/assets/images/close.svg" width="50px" alt=""></div>
+</div>
+
+<contact-modal></contact-modal>
+</body>
+</html>

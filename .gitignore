@@ -2,3 +2,8 @@
 firebase-debug.log
 .firebaserc
 .firebase/
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/portfolio-website.iml
+/.idea/vcs.xml

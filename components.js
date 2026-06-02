@@ -1,6 +1,6 @@
 class ContactModal extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
         <div id="contact-modal">
             <div id="contact-modal-panel">
                 <div id="close-contact-modal-button"></div>
@@ -18,12 +18,12 @@ class ContactModal extends HTMLElement {
             </div>
         </div>
       `;
-  }
+    }
 }
 
 class Navbar extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
       <div class="navbar">
         <div id="navbar-left-section">
             <span style="font-weight: 700;">I'm Emir Cihangir,</span>
@@ -53,37 +53,40 @@ class Navbar extends HTMLElement {
         <br>
       </div>
     `;
-  }
+    }
 }
 
 class ProjectLink extends HTMLElement {
-  connectedCallback() {
-    let iconType = this.getAttribute("icon-type");
-    if (iconType == null) iconType = "svg";
+    connectedCallback() {
+        let iconType = this.getAttribute("icon-type");
+        if (iconType == null) iconType = "svg";
 
-    let backgroundImage = "/projects/" + this.getAttribute("app-name") + "/assets/app-icon." + iconType;
-    if (this.getAttribute("scaffold-icon") == "true") backgroundImage = "/assets/images/scaffold-icon.svg";
+        let backgroundImage = "/projects/" + this.getAttribute("app-name") + "/assets/app-icon." + iconType;
+        if (this.getAttribute("scaffold-icon") === "true") backgroundImage = "/assets/images/scaffold-icon.svg";
 
-    let supportedPlatforms = this.getAttribute("supported-platforms");
-    if (supportedPlatforms != null) supportedPlatforms = supportedPlatforms.replaceAll(" ", "").split(",");
+        let supportedPlatforms = this.getAttribute("supported-platforms");
+        if (supportedPlatforms != null) supportedPlatforms = supportedPlatforms.replaceAll(" ", "").split(",");
 
-    let platformIcons = [];
-    supportedPlatforms.forEach(element => {
-      let iconPath = "/assets/images/" + element + "_platform_icon.svg";
-      platformIcons.push(`<div class="platform-icon" style="background-image: url('` + iconPath + `');"></div>`);
-    });
-    platformIcons = platformIcons.join('');
-    this.innerHTML = `
-      <div class="project-link" data-appname="`+ this.getAttribute("app-name") + `">
+        let platformIcons = [];
+        supportedPlatforms.forEach(element => {
+            let iconPath = "/assets/images/" + element + "_platform_icon.svg";
+            // noinspection CssUnknownTarget
+            platformIcons.push(`<img class="platform-icon" src="` + iconPath + `"/>`);
+        });
+        platformIcons = platformIcons.join('');
+
+        // noinspection CssUnknownTarget
+        this.innerHTML = `
+      <div class="project-link" data-appname="` + this.getAttribute("app-name") + `">
           <div class="project-link-icon" style="background-image: url('` + backgroundImage + `');"></div>
           <div class="project-link-content">
             <p class="project-link-title">` + this.getAttribute("app-title") + `</p>
             <p class="project-link-description">` + this.getAttribute("app-description") + `</p>
-            <div class="platform-icons-container">`+ platformIcons + `</div>
+            <div class="platform-icons-container">` + platformIcons + `</div>
           </div>
       </div>
     `;
-  }
+    }
 }
 
 customElements.define('contact-modal', ContactModal);
