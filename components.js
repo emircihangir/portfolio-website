@@ -14,6 +14,7 @@ class ContactModal extends HTMLElement {
                     <div style="background-image: url('/assets/images/linkedin_logo.png');" class="logo-div" onclick="window.open('https://www.linkedin.com/in/emir-cihangir-683146313/', '_blank')"></div>
                     <div style="background-image: url('/assets/images/instagram_logo.svg');" class="logo-div" onclick="window.open('https://www.instagram.com/emir.cihangirr/', '_blank')"></div>
                     <div style="background-image: url('/assets/images/bmc_logo.svg');" class="logo-div" onclick="window.open('https://buymeacoffee.com/emircihangir', '_blank')"></div>
+                    <div style="background-image: url('/assets/images/medium_logo.svg');" class="logo-div" onclick="window.open('https://medium.com/@m.emircihangir', '_blank')"></div>
                 </div>
             </div>
         </div>
