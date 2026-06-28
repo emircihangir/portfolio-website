@@ -367,13 +367,24 @@ a.contact-link {
     flex-direction: column;
 }
 
+.posts-container,
+.posts-container *,
+.post-content,
+.post-content * {
+    font-family: "Times New Roman", Times, serif;
+}
+
 .post-link {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 40px;
     border: 1px solid var(--navbar-background);
     margin-top: 50px;
+    padding: 28px;
+    width: min(900px, calc(100% - 48px));
+    box-sizing: border-box;
     cursor: pointer;
 }
 
@@ -397,6 +408,85 @@ a.contact-link {
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 50px;
+}
+
+.post-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfbfb 45%, #ffffff 100%);
+}
+
+.post-article-content {
+    color: #171717;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-top: 18px;
+    position: relative;
+}
+
+.post-article-content::before {
+    content: "";
+    display: block;
+    width: 88px;
+    height: 3px;
+    background-color: var(--main-color);
+    margin-bottom: 28px;
+}
+
+.post-article-header {
+    margin-bottom: 48px;
+}
+
+.post-article-figure {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.post-content .post-article-figure img {
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.post-article-figure figcaption {
+    margin-top: 14px;
+    color: #666;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+}
+
+.post-article-title-block {
+    margin-top: 56px;
+}
+
+.post-article-title-block h1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 46px;
+    line-height: 1.12;
+}
+
+.post-article-content h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-left: 14px;
+    border-left: 4px solid var(--main-color);
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.post-article-content p {
+    margin: 0 0 18px 0;
+}
+
+.post-article-content > p:first-of-type {
+    color: #333;
+    font-size: 21px;
+    line-height: 1.55;
 }
 
 .post-title {
@@ -546,6 +636,7 @@ p.project-link-description {
     .post-link {
         width: 90%;
         padding: 10px;
+        gap: 16px;
     }
 
     .post-link-date {
@@ -560,6 +651,32 @@ p.project-link-description {
     .post-link-details {
         font-weight: 300;
         font-size: 12px;
+    }
+
+    .post-article-content {
+        font-size: 17px;
+        line-height: 1.55;
+        margin-top: 8px;
+    }
+
+    .post-article-header {
+        margin-bottom: 28px;
+    }
+
+    .post-article-title-block {
+        margin-top: 36px;
+    }
+
+    .post-article-title-block h1 {
+        font-size: 34px;
+    }
+
+    .post-article-content h3 {
+        font-size: 23px;
+    }
+
+    .post-article-content > p:first-of-type {
+        font-size: 18px;
     }
 
     #contact-modal-panel {
